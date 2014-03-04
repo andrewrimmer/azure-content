@@ -313,8 +313,6 @@ path*\>/subscriptions/<*subscription name*\>".
 		SubscriptionClient.CreateFromConnectionString
                 (connectionString, "TestTopic", "HighMessages");
 
-	Client.Receive();
-     
 	// Continuously process messages received from the HighMessages subscription 
     while (true) 
     {  
